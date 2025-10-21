@@ -27,6 +27,7 @@
         .vision-banner-content {
             z-index: 2;
             position: relative;
+            padding: 0 20px;
         }
         
         .vision-banner-image {
@@ -58,6 +59,8 @@
             border-radius: 18px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            width: 100%;
+            margin-bottom: 2rem;
         }
         
         .vision-feature-image:hover {
@@ -65,12 +68,12 @@
         }
         
         .vision-feature-text {
-            padding: 2rem;
+            padding: 1rem 0;
         }
         
         .vision-feature-title {
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
         
@@ -186,13 +189,19 @@
             background-color: rgba(255,255,255,0.1);
         }
         
+        /* Mobile Optimizations */
         @media (max-width: 768px) {
             .vision-banner h1 {
-                font-size: 3rem;
+                font-size: 2.5rem !important;
+            }
+            
+            .vision-banner .lead {
+                font-size: 1.1rem;
             }
             
             .vision-section-title {
                 font-size: 2rem;
+                margin-bottom: 1.5rem;
             }
             
             .vision-feature {
@@ -200,20 +209,94 @@
             }
             
             .vision-feature-text {
-                padding: 1rem 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .vision-feature-title {
+                font-size: 1.6rem;
+                margin-bottom: 1.2rem;
+            }
+            
+            .vision-feature .lead {
+                font-size: 1.1rem;
+            }
+            
+            .vision-feature p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
             }
             
             .vision-specs {
                 padding: 4rem 0;
             }
             
+            .vision-specs-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
+            .vision-specs-title {
+                font-size: 1.3rem;
+                margin-bottom: 1.2rem;
+            }
+            
+            .vision-specs-list li {
+                font-size: 0.95rem;
+                margin-bottom: 0.7rem;
+            }
+            
             .vision-order {
                 padding: 4rem 0;
             }
             
-            .vision-specs-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+            .vision-order-title {
+                font-size: 2rem;
+            }
+            
+            .vision-price {
+                font-size: 3rem;
+                margin: 1.5rem 0;
+            }
+            
+            .vision-btn {
+                padding: 10px 30px;
+                font-size: 1rem;
+            }
+            
+            .vision-delivery {
+                font-size: 0.85rem;
+            }
+            
+            .vision-footer {
+                padding: 1rem 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .vision-banner h1 {
+                font-size: 2.2rem !important;
+            }
+            
+            .vision-banner .btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+            
+            .vision-section-title {
+                font-size: 1.8rem;
+            }
+            
+            .vision-feature-title {
+                font-size: 1.5rem;
+            }
+            
+            .vision-order-title {
+                font-size: 1.8rem;
+            }
+            
+            .vision-price {
+                font-size: 2.8rem;
             }
         }
     </style>
